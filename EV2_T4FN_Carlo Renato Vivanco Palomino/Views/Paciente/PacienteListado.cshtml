@@ -1,0 +1,76 @@
+﻿@model IEnumerable<EV2_T4FN_Carlo_Renato_Vivanco_Palomino.Models.Paciente>
+
+@{
+    ViewBag.Title = "PacienteListado";
+    Layout = "~/Views/Shared/_PacienteLayout.cshtml";
+}
+
+<h2>PacienteListado</h2>
+
+<p>
+    @Html.ActionLink("Create New", "PacienteRegistro")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.codigoPaciente)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.apellidos)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nombres)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dni)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fecNac)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sexo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.estado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fecRegistro)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.codigoPaciente)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.apellidos)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nombres)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.dni)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fecNac)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sexo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.estado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fecRegistro)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "PacienteActualizado", new { id=item.codigoPaciente})
+            @Html.ActionLink("Details", "DetailPaciente", new { id=item.codigoPaciente})
+            @Html.ActionLink("Delete", "PacienteEliminado", new { id=item.codigoPaciente})
+        </td>
+    </tr>
+}
+
+</table>

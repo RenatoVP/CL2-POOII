@@ -16,7 +16,7 @@ namespace EV2_T4FN_Carlo_Renato_Vivanco_Palomino.Controllers
 
         List<Paciente> ListaPaciente()
         {
-            List<Paciente> temp = new List<Paciente>();
+            List<Paciente> temp = new List<Paciente>(); 
             try
             {
                 SqlCommand cmd = new SqlCommand("SELECT * FROM PACIENTE", cn);

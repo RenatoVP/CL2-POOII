@@ -10,7 +10,7 @@ using System.Data;
 
 namespace EV2_T4FN_Carlo_Renato_Vivanco_Palomino.Controllers
 {
-    public class ClinicaController : Controller
+    public class ClinicaController : Controller 
     {
         SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["clinica"].ConnectionString);
         // GET: Clinica

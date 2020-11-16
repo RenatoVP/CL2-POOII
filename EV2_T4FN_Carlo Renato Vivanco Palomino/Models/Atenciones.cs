@@ -14,6 +14,6 @@ namespace EV2_T4FN_Carlo_Renato_Vivanco_Palomino.Models
         public DateTime FechaAtencion { get; set; }
         public DateTime HoraAtencion { get; set; }
         public string Estado { get; set; }
-        public DateTime FechaRegistro { get; set; }
+        public DateTime FechaRegistro { get; set; } 
     }
 }

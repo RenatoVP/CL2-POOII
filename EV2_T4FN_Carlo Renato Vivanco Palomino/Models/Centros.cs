@@ -15,7 +15,7 @@ namespace EV2_T4FN_Carlo_Renato_Vivanco_Palomino.Models
         public string NombreCentro { get; set; }
 
         [Display(Name = "Nombre", Order = 2)]
-        public string Distrito { get; set; }
+        public string Distrito { get; set; } 
 
         [Display(Name = "Nombre", Order = 3)]
         public string telefono { get; set; }

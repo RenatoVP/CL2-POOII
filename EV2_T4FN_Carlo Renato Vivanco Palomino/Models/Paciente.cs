@@ -17,7 +17,7 @@ namespace EV2_T4FN_Carlo_Renato_Vivanco_Palomino.Models
 
         [Display(Name = "Nombre", Order = 2)]
         [Required(AllowEmptyStrings = false, ErrorMessage = "Debe completar el campo nombre")]
-        public string nombres { get; set; }
+        public string nombres { get; set; } 
 
         [Display(Name = "Dni", Order = 3)]
         [Required(AllowEmptyStrings = false, ErrorMessage = "Es necesario ingresar su dni")]

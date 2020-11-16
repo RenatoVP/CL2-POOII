@@ -16,6 +16,6 @@ namespace EV2_T4FN_Carlo_Renato_Vivanco_Palomino
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-        }
+        } 
     }
 }
